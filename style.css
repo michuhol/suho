@@ -1601,3 +1601,38 @@
     width: 100%;
   }
 }
+/* 모바일에서 카드 텍스트 깨지는 현상 보정 */
+@media (max-width: 480px) {
+  /* 카드 전체 박스가 화면에 딱 맞게 */
+  .support-item,
+  .sub-video-card,
+  .process-step {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* 카드 제목 크기/줄간격 조정 */
+  .support-item h3,
+  .support-item h2,
+  .sub-video-card h3,
+  .sub-video-card h2 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* 카드 안 여백 조금 줄여서 답답함 완화 */
+  .support-item,
+  .sub-video-card {
+    padding: 1.25rem 1.25rem;
+  }
+}
+
+/* 모든 텍스트가 박스 밖으로 튀어나오지 않게 전역 설정 */
+.support-item,
+.sub-video-card,
+.process-step {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}

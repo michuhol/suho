@@ -1636,3 +1636,20 @@
   word-break: keep-all;
   overflow-wrap: break-word;
 }
+/* ===== Hero 영역 배경 & 텍스트 조정 ===== */
+
+/* Hero 배경색 변경 */
+.home-container1,
+.hero-video-section,
+.home-thq-hero-video-section-elm {
+  background-color: #EAF4FF !important;  /* 연한 하늘색 */
+}
+
+/* Hero 영역 텍스트 색 변경 */
+.home-container1 h1,
+.home-container1 p,
+.hero-video-section h1,
+.hero-video-section p,
+.hero-content-wrapper span {
+  color: #111111 !important; /* 진회색(검정 대신 더 부드러움) */
+}

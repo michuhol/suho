@@ -98,3 +98,10 @@
     width: 347px;
   }
 }
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}
